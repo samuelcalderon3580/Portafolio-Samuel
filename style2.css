@@ -1,0 +1,201 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f4f4f4;
+}
+
+/* NAVBAR */
+
+.navbar{
+  background:#001fa8;
+  padding:30px 20px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  font-size:25px;
+  transition:0.3s;
+}
+
+.navbar a:hover{
+  transform:scale(1.1);
+  color:#d9d9d9;
+}
+
+/* PORTADA */
+
+.hero{
+  background:#9c9c9c;
+  padding:70px 80px;
+}
+
+.hero h1{
+  color:white;
+  font-size:72px;
+  line-height:1.2;
+  max-width:600px;
+}
+
+/* CONTENIDO */
+
+.contenido{
+  background:white;
+  padding:60px 80px;
+}
+
+/* BLOQUES */
+
+.bloque{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  margin-bottom:90px;
+}
+
+/* MEDIA */
+
+.media{
+  width:700px;
+  flex-shrink:0;
+}
+
+/* VIDEO */
+
+.video-box{
+  position:relative;
+  width:100%;
+  height:380px;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.video-box iframe{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border:none;
+}
+
+/* IMÁGENES */
+
+.imagen{
+  width:100%;
+  height:380px;
+  object-fit:cover;
+  border-radius:10px;
+  
+}
+
+/* TEXTO */
+
+.texto{
+  width:500px;
+}
+
+.texto h2{
+  color:#001fa8;
+  font-size:36px;
+  margin-bottom:20px;
+}
+
+.texto p{
+  font-size:20px;
+  line-height:1.8;
+  text-align:justify;
+  color:#111;
+}
+.contenedor{
+    max-width:750px;
+    margin:auto;
+}
+
+.fila{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    
+}
+
+.fila img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.texto h3{
+    margin:0;
+    color:#001fa8;
+    font-size:36px;
+}
+
+.texto p{
+    margin-top:10px;
+    color:#000000;
+    line-height:1.5;
+}
+
+@media(max-width:700px){
+
+    .fila{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .fila img{
+        width:100%;
+        max-width:250px;
+        height:auto;
+    }
+
+}
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+  .bloque{
+    flex-direction:column;
+  }
+
+  .media{
+    width:100%;
+  }
+
+  .texto{
+    width:100%;
+  }
+
+  .hero h1{
+    font-size:50px;
+  }
+
+}
+/* FOOTER */
+
+footer{
+  background:#001fa8;
+  color:white;
+  text-align:center;
+  padding:30px;
+  font-size:24px;
+  font-weight:bold;
+}
