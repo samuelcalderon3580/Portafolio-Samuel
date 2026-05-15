@@ -133,17 +133,6 @@ body{
     }
 
 }
-/* FOOTER */
-
-footer{
-  background:#001fa8;
-  color:white;
-  text-align:center;
-  padding:30px;
-  font-size:24px;
-  font-weight:bold;
-}
-
 /* RESPONSIVE */
 
 @media(max-width:1200px){
@@ -165,3 +154,14 @@ footer{
   }
 
 }
+/* FOOTER */
+
+footer{
+  background:#001fa8;
+  color:white;
+  text-align:center;
+  padding:30px;
+  font-size:24px;
+  font-weight:bold;
+}
+
