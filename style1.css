@@ -144,3 +144,24 @@ footer{
   font-weight:bold;
 }
 
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+  .bloque{
+    flex-direction:column;
+  }
+
+  .media{
+    width:100%;
+  }
+
+  .texto{
+    width:100%;
+  }
+
+  .hero h1{
+    font-size:50px;
+  }
+
+}
