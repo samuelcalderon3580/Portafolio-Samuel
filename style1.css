@@ -47,16 +47,38 @@ img{
 
 .titulo{
     background:#9c9c9c;
-    padding:70px 40px;
+    padding:40px 40px;
+
+    /* FLEX AQUÍ */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
+/* TEXTO */
 .titulo h1{
     color:white;
-    font-size:72px;
+    font-size:60px;
+    margin:0;
     line-height:1.2;
-    text-align:center;
 }
 
+/* CONTENEDOR FOTO */
+.profile-container{
+    width:300px;
+    height:300px;
+    flex-shrink:0; /* evita deformación */
+}
+
+/* IMAGEN */
+.profile-container img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid white;
+    display:block;
+}
 /* ===== CONTENIDO ===== */
 
 .contenido{
@@ -155,58 +177,8 @@ footer{
     font-weight:bold;
 }
 
-/* ===== TABLETS ===== */
 
-@media(max-width:992px){
-
-    .navbar{
-        gap:20px;
-        padding:20px;
-    }
-
-    .navbar a{
-        font-size:18px;
-    }
-
-    .titulo{
-        padding:60px 30px;
-    }
-
-    .titulo h1{
-        font-size:52px;
-    }
-
-    .contenido{
-        padding:50px 25px;
-    }
-
-    .bloque{
-        flex-direction:column;
-        gap:25px;
-    }
-
-    .texto{
-        width:100%;
-    }
-
-    .texto h2{
-        font-size:34px;
-    }
-
-    .texto p{
-        font-size:20px;
-    }
-
-    .imagen{
-        height:auto;
-    }
-
-    footer{
-        font-size:20px;
-    }
-}
-
-/* ===== CELULARES ===== */
+/* ===== vista celular===== */
 
 @media(max-width:600px){
 
